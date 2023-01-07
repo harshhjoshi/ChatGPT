@@ -29,7 +29,7 @@ app.post('/', async (req, res) => {
         console.log("ErroSSS", prompt)
 
         const response = await openai.createCompletion({
-            model: "text-davinci-003",
+            model: "text-curie-001",
             prompt: `${prompt}`,
             temperature: 0.7,
             max_tokens: 100,
